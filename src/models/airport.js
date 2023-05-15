@@ -13,9 +13,17 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       this.belongsTo(models.City, {
         foreignKey: 'cityId',
-        onDelete: 'cascade',
-        onUpdate: 'cascade'
-      })
+        // onDelete: 'cascade',
+        // onUpdate: 'cascade'
+      });
+      this.hasMany(models.Flight, {
+        foreignKey: 'departureAirportId',
+        onDelete: 'cascade'
+      });
+      this.hasMany(models.Flight, {
+        foreignKey: 'arrivalAirportId',
+        onDelete: 'cascade'
+      });
     }
   }
   Airport.init({
