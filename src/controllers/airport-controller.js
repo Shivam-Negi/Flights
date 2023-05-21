@@ -94,7 +94,8 @@ async function destroyAirport(req, res) {
  * UPDATE : /airports/:id
  * req-body {   name: 'IGI',
  *              code: 'DEL',
- *              cityId: 5   }
+ *              cityId: 5,
+ *              address: 'Chandigarh sec22'   }
  */
 async function updateAirport(req, res) {
     try {

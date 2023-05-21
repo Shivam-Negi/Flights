@@ -7,3 +7,9 @@ function compareTime(timeString1, timeString2) {
 module.exports = {
     compareTime
 }
+
+/* 
+    let x = compareTime('2023-07-19 07:45:00','2023-07-19 05:15:00');
+    console.log(x); 
+*/
+
